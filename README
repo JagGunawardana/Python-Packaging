@@ -1,0 +1,26 @@
+Various python packaging tools (tested on OpenSuse, Centos 5/6)
+===============================================================
+
+build_rpm.sh - generate an rpm from pypi, or a source tarball
+=============================================================
+
+Allows you to package your applications without relying on 
+site-packages to look sensible.
+
+useage:
+-------
+
+build_rpm.sh package_name version python_version src_url
+
+
+e.g. 
+./build_rpm.sh requests 0.10.8 2.7
+
+or
+
+./build_rpm.sh python-memcached 1.48 2.7 http://ftp.tummy.com/pub/python-me  mcached/old-releases/python-memcached-1.48.tar.gz
+
+notes:
+------
+Depends on: 
+    py2pack
